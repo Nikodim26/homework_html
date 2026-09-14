@@ -1,0 +1,67 @@
+/* Контейнер меню в левом нижнем углу */
+.profile-panel {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+/* Блок с аватаркой и именем (триггер) */
+.user-trigger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+    gap: 8px;
+}
+
+/* Показываем меню при наведении*/
+.user-trigger:hover .dropdown-menu {
+    display: block;
+
+}
+
+/* Аватарка */
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #444;
+}
+
+/* Стрелка вниз */
+.arrow {
+    font-size: 10px;
+    color: white;
+}
+
+/* Выпадающее меню */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    bottom: 36px;
+    left: 0;
+    background-color: #485461 !important;
+    min-width: 160px;
+    border-radius: 4px;
+    padding: 6px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.dropdown-item {
+    color: white !important; /* белый текст по умолчанию */
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-item:hover {
+    color: #485461 !important;
+}
