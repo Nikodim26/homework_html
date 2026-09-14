@@ -65,3 +65,7 @@
 .dropdown-item:hover {
     color: #485461 !important;
 }
+
+.spaced-line {
+    margin: 64vh 0; /* 20px сверху и снизу, 0 слева и справа */
+  }
