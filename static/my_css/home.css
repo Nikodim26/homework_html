@@ -1,0 +1,25 @@
+.spaced_home {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+.spaced_load {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+.center-text {
+    text-align: center;
+  }
+
+
+.centered-text {
+    max-width: 250px;             /* ограничение ширины */
+    margin-left: auto;
+    margin-right: auto;           /* центрирование блока */
+    text-align: center;
+}
+
+.fixed-width-btn {
+    width: 250px;              /* заданная ширина */
+}
