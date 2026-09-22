@@ -4,6 +4,7 @@
   }
 
 .column_catalogue {
+margin-bottom: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,46 +13,15 @@
     min-height: 300px;
 }
 
-
-.card-body {
-  padding: 16px;
-}
-
-.card-text {
-  margin: 0 0 12px 0;
-  color: #333;
-  line-height: 1.4;
-}
-
-.card-actions {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 12px;
-}
-
-.btn {
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  background: #fff;
-  color: #333;
-  border-radius: 4px;
-  font-size: 13px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  border-color: #999;
-}
-
 .card-time {
   float: right;
   color: #888;
   font-size: 12px;
+  margin-top: -30px;
 }
 
-/* Чтобы плашка времени не «наезжала» на кнопки */
-.card-actions::after {
-  content: "";
-  display: table;
-  clear: both;
+.btn:hover {
+  border-color: #007bff;
+  background-color: #eef2ff;
+  color: #0056b3;
 }
