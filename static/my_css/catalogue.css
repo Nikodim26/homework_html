@@ -4,9 +4,10 @@
   }
 
 .column_catalogue {
-  display: flex;
-  flex-direction: column;           /* элементы идут сверху вниз */
-  align-items: center;              /* центрирует по горизонтали */
-  justify-content: center;          /* центрирует по вертикали (если у .column есть высота) */
-  min-height: 300px;                /* например, чтобы было где центрировать */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    min-height: 300px;
 }
