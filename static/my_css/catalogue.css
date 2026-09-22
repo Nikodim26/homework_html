@@ -2,3 +2,11 @@
     margin-top: 100px;
     text-align: center;
   }
+
+.column_catalogue {
+  display: flex;
+  flex-direction: column;           /* элементы идут сверху вниз */
+  align-items: center;              /* центрирует по горизонтали */
+  justify-content: center;          /* центрирует по вертикали (если у .column есть высота) */
+  min-height: 300px;                /* например, чтобы было где центрировать */
+}
