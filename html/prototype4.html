@@ -50,16 +50,23 @@
         <div class="row row-cols-2">
 
             <div class="col">
-                <h4 class="spaced_load">Товар 1</h4>
                 <br>
-                <h3 class="center-text">100$</h3>
-                <br>
-                <h6 class="centered-text">10 users included, 2GB of storage.
-                    Email support, Help center access</h6>
-                <br>
-                <div class="container centered-text">
-                    <button type="button" class="btn btn-outline-primary fixed-width-btn">Купить</button>
-                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                        <div class="form-group">
+                        <label for="email">Почта</label>
+                        <input type="email" id="email" name="email" placeholder="@">
+                    </div>
+                        <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+
             </div>
             <div class="col">
                 <br>
