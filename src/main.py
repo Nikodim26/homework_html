@@ -3,12 +3,12 @@ from pathlib import Path
 from urllib.parse import parse_qs
 
 CONTACTS_FILE = (
-    Path(__file__).resolve().parent.parent / "html" / "prototype4.html"
+    Path(__file__).resolve().parent.parent / "html" / "contacts.html"
 )
 
 class RequestHandler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:
-        if self.path != "/prototype4":
+        if self.path != "/contacts":
             self.send_error(404, "Страница не найдена")
             return
 
@@ -22,7 +22,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         self.wfile.write(page)
 
     def do_POST(self) -> None:
-        if self.path != "/prototype4":
+        if self.path != "/contacts":
             self.send_error(404, "Страница не найдена")
             return
 
@@ -35,5 +35,5 @@ class RequestHandler(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     server = HTTPServer(("localhost", 8000), RequestHandler)
-    print("Сервер запущен: http://localhost:8000/prototype4")
+    print("Сервер запущен: http://localhost:8000/contacts")
     server.serve_forever()
